@@ -1,8 +1,8 @@
-import React, { HTMLAttributes } from 'react';
+import React, { ButtonHTMLAttributes } from 'react';
 
 import { Container } from './styles';
 
-interface IButton extends HTMLAttributes<HTMLButtonElement> {
+interface IButton extends ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
 }
 

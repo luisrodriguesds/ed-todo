@@ -1,8 +1,8 @@
-import React, { HTMLAttributes } from 'react';
+import React, { InputHTMLAttributes } from 'react';
 
 import { Container } from './styles';
 
-interface IInput extends HTMLAttributes<HTMLInputElement> {}
+interface IInput extends InputHTMLAttributes<HTMLInputElement> {}
 
 const Input: React.FC<IInput> = ({ ...rest }) => {
   return (

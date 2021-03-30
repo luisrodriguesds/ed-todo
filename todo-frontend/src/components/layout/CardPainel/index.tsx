@@ -13,30 +13,21 @@ import {
 import Input from '../../forms/Input';
 import Button from '../../forms/Button';
 
-const cards = [
-  {
-    id: '1',
-    title: 'Project ABC',
-    items: [
-      { id: '11', isDo: false, title: 'Apenas um teste' },
-      { id: '22', isDo: false, title: 'Apenas um teste 02' },
-      { id: '33', isDo: false, title: 'Apenas um teste 03' },
-      { id: '44', isDo: false, title: 'Apenas um teste 04' },
-    ],
-  },
-  {
-    id: '2',
-    title: 'Project XYZ',
-    items: [
-      { id: '111', isDo: false, title: 'Apenas um teste' },
-      { id: '222', isDo: false, title: 'Apenas um teste 02' },
-      { id: '333', isDo: false, title: 'Apenas um teste 03' },
-    ],
-  },
-];
+interface IProject {
+  id: string;
+  title: string;
+  items: {
+    id: string;
+    title: string;
+    isDo: boolean;
+  }[];
+}
 
-const CardPainel: React.FC = () => {
-  const [projects, setProjects] = useState(cards);
+interface ICardPainel {
+  projects: IProject[];
+}
+
+const CardPainel: React.FC<ICardPainel> = ({ projects }) => {
   return (
     <Container>
       {projects.map((project) => (
