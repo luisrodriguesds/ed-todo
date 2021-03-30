@@ -6,6 +6,18 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    > div {
+      flex: 0 0 auto;
+      width: 48%;
+
+      margin: 0 12px 12px 0;
+    }
+  }
 `;
 
 export const Card = styled.div`

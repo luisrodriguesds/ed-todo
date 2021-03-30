@@ -17,4 +17,10 @@ export const Container = styled.div`
       margin-top: 16px;
     }
   }
+
+  @media (min-width: 768px) {
+    > div {
+      min-width: 310px;
+    }
+  }
 `;
