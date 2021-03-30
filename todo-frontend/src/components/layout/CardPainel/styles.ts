@@ -28,7 +28,7 @@ export const CardHeader = styled.header`
   border-top-right-radius: 8px;
 
   border-bottom: 1px var(--dark) solid;
-  background: var(--bg-primary);
+  background: var(--dark);
   color: white;
   ul {
     list-style: none;
@@ -74,5 +74,24 @@ export const CardBody = styled.div`
 export const CardSection = styled.section`
   & + section {
     margin-top: 16px;
+  }
+`;
+
+export const CardFooter = styled.div`
+  border-top: 1px solid var(--gray);
+
+  margin-top: 8px;
+  padding-top: 16px;
+
+  .card-add-task {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    div:first-child {
+      flex: 1px;
+      margin-right: 16px;
+    }
   }
 `;

@@ -14,9 +14,9 @@ export const Container = styled.div`
 
     background-color: var(--dark);
     border: 1px solid var(--primary);
-    padding: 0.375rem 0.75rem;
+    padding: 6px 8px;
 
-    font-size: 1rem;
+    font-size: 0.875rem;
     border-radius: 5px;
 
     transition: background-color, color 0.5s;

@@ -8,7 +8,10 @@ import {
   CardTitle,
   CardBody,
   CardSection,
+  CardFooter,
 } from './styles';
+import Input from '../../forms/Input';
+import Button from '../../forms/Button';
 
 const cards = [
   {
@@ -83,6 +86,12 @@ const CardPainel: React.FC = () => {
                   ))}
               </ul>
             </CardSection>
+            <CardFooter>
+              <form className="card-add-task">
+                <Input placeholder="Task" />
+                <Button label="Add" />
+              </form>
+            </CardFooter>
           </CardBody>
         </Card>
       ))}

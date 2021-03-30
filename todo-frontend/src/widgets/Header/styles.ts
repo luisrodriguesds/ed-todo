@@ -7,7 +7,7 @@ export const Container = styled.header`
   align-items: center;
   padding: 10px 20px;
   border-bottom: 1px var(--gray) solid;
-  background: var(--bg-primary);
+  background: var(--dark);
   color: white;
   div {
     span {
