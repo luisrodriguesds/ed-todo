@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import CardInput from '../components/layout/CardInput';
 import CardPainel from '../components/layout/CardPainel';
 import Column from '../components/layout/Column';
 import Row from '../components/layout/Row';
@@ -17,7 +18,9 @@ export default function Home() {
             <Column>
               <CardPainel />
             </Column>
-            <Column>Coluna de cadastro</Column>
+            <Column>
+              <CardInput />
+            </Column>
           </Row>
         </main>
       </div>
