@@ -6,9 +6,9 @@ export const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  border-bottom: 1px #ccc solid;
-  background: #ddd;
-
+  border-bottom: 1px var(--gray) solid;
+  background: var(--bg-primary);
+  color: white;
   div {
     span {
       padding: 5px 10px;

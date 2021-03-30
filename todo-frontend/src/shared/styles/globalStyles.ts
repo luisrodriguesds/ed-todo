@@ -12,6 +12,19 @@ export default createGlobalStyle`
 
   body {
     width: 100%;
-    background: #f3f3f3;
+    background: var(--bg-secondary);
+  }
+
+  :root {
+    --primary: #343a40;
+    --secondary: #495057;
+
+    --bg-primary: #6c757d;
+    --bg-secondary: #adb5bd;
+    --bg-tertiary: #dee2e6;
+
+    --dark: #212529;
+    --gray: #ced4da;
+
   }
 `;

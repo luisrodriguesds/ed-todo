@@ -9,12 +9,14 @@ export const Container = styled.div`
 `;
 
 export const Card = styled.div`
-  margin-top: 10px;
+  margin-top: 16px;
   width: 100%;
-  background: #ddd;
-  border-width: 0 1px 1px 1px;
-  border-color: #ccc;
-  border-style: solid;
+  background: var(--bg-tertiary);
+  border: 1px var(--gray) solid;
+  border-radius: 8px;
+
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(33, 37, 41, 0.6);
+  box-shadow: 0px 0px 8px 0px rgba(33, 37, 41, 0.6);
 `;
 
 export const CardHeader = styled.header`
@@ -22,9 +24,11 @@ export const CardHeader = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 
-  border-bottom: 1px #ccc solid;
-  background: #455aaf;
+  border-bottom: 1px var(--dark) solid;
+  background: var(--bg-primary);
   color: white;
   ul {
     list-style: none;
